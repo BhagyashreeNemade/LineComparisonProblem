@@ -1,13 +1,22 @@
 ﻿namespace LineComparisonProblem
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
 
             Console.WriteLine("Welcome to Line Comparison Computation Program");
-            CreatingLine line = new CreatingLine();
-            line.CreateLine();
+            CheckIfLinesAreEqual result = new CheckIfLinesAreEqual();
+            bool x = result.EqualityOfLine();
+
+            if (x == true)
+            {
+                Console.WriteLine("Lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Lines are not equal");
+            }
         }
     }
 }
