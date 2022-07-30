@@ -6,6 +6,8 @@
         {
 
             Console.WriteLine("Welcome to Line Comparison Computation Program");
+            CreatingLine line = new CreatingLine();
+            line.CreateLine();
         }
     }
 }
